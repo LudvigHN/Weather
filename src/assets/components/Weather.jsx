@@ -6,7 +6,7 @@ export default function Weather() {
     const [weather, setWeather] = useState()
     const [city, setCity] = useState()
   return (
-    <div>
+    <div className='wrapper'>
       <CitySearch setWeather={setWeather} setCity={setCity}></CitySearch>
       <WeatherDisplay weather={weather} city={city}></WeatherDisplay>
     </div>
