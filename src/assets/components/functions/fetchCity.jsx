@@ -8,10 +8,8 @@ export default async function fetchCity(url, setCity, setWeather,city) {
     
     const respons = await fetch(url)
     const data = await respons.json()
-    console.log(data);
     
     if (data.length != 0) {
-        console.log(data[0]);
 
         setCity(data[0])
         const url = new URL(import.meta.env.VITE_API_CORD_URL)
