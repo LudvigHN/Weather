@@ -43,8 +43,8 @@ export default function CitySearch({ setWeather, setCity }) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="search" name="city" placeholder='Copenhagen' />
-        <input type="submit" value="Search" />
+        <input type="search" name="city" placeholder='København' />
+        <input type="submit" value="Søg" />
       </form>
     </div>
   )
